@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./splitter.js"></script>
+</head>
+<body>
+    <script>
+        let splitter = new Splitter({
+            direction: true,
+            firstPanel: {
+                id: "panel1"
+            },
+            secondPanel: {
+                id: "panel2"
+            }
+        });
+
+        console.log(splitter.direction);
+        console.log(splitter.width);
+        console.log(splitter.firstPanel.id);
+        console.log(splitter.secondPanel.id);
+    </script>
+
+    <div id="panel1"></div>
+    <div id="panel2"></div>
+</body>
+</html>
