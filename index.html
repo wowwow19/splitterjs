@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <script type="text/javascript" src="./splitter.js"></script>
 </head>
 <body>
+    <div id="wrapper">
+        <div id="firstPanel">1</div>
+        <div id="secondPanel">2</div>
+    </div>
     <script>
-        let splitter = new Splitter({
-            direction: true,
-            firstPanel: {
-                id: "panel1"
+        const splitter = new Splitter({
+            type: 'horizontal',
+            min: {
+                unit: ['px', 'vh'],
+                size: [20, 30]
             },
-            secondPanel: {
-                id: "panel2"
-            }
+            cookie: true
         });
 
-        console.log(splitter.direction);
-        console.log(splitter.width);
-        console.log(splitter.firstPanel.id);
-        console.log(splitter.secondPanel.id);
+        splitter.init();
     </script>
-
-    <div id="panel1"></div>
-    <div id="panel2"></div>
 </body>
 </html>
