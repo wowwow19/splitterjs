@@ -29,7 +29,7 @@ class Splitter {
                 }
             } else {
                 if (unit !== 'px' && unit !== '%' && unit !== 'vw' && unit !== 'vh') {
-                    throw new Error('Invalid Splitter Minimum Size Unit.\nPlease set it in \'px\' or \'%\', \'vw\' or \'vh\'');
+                    throw new Error('Invalid Splitter1 Minimum Size Unit.\nPlease set it in \'px\' or \'%\', \'vw\' or \'vh\'');
                 }
             }
         }
